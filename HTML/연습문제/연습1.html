@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pizza</title>
+</head>
+<body>
+    <form>
+    <p><label for="name">고객명:</label>
+    <input type="text"></p>
+    <p><label for="name">전화번호:</label>
+    <input type="text"></p>
+    <p><label for="name">E-mail:</label>
+    <input type="text"></p>
+
+        <label for="select">피자선택:</label>
+        <select id="select">
+            <option value="1">피자를 선택하세요</option>
+            <option value="2">치즈피자</option>
+            <option value="3">페페로니피자</option>
+            <option value="4">콤비네이션피자</option>
+        </select>
+
+        <fieldset>
+            <legend>피자 사이즈</legend>
+            <p><input type="radio" name="size">Small</p>
+            <p><input type="radio" name="size">Medium</p>
+            <p><input type="radio" name="size">Large</p>
+        </fieldset>
+        <fieldset>
+            <legend>토핑선택</legend>
+            <p><input type="checkbox">베이컨</p>
+            <p><input type="checkbox">치즈</p>
+            <p><input type="checkbox">양파</p>
+            <p><input type="checkbox">버섯</p>
+        </fieldset>
+        <br>
+        <label>희망배송시간:</label>
+        <input type="time">
+        <p><label>배송시 요청사항</label>
+            <textarea></textarea>
+        </p>
+        <input type="submit" value="주문하기">
+    </form>
+
+</body>
+</html>
