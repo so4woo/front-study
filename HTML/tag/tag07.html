@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--암묵적인 방법-->
+    <label>패티추가<input type="checkbox"></label>
+    <label>치즈추가<input type="checkbox"></label>
+    <label>피클추가<input type="checkbox" checked></label>
+
+    <br><br>
+    <!--명시적인 방법-->
+    <label for="addshot">샷추가</label><input type="checkbox" id="addshot">
+    <label for="addice">얼음추가</label><input type="checkbox" id="addice">
+    <label for="sorry25">물25ml적게</label><input type="checkbox" id="sorry25">
+
+    <br><br>
+    <fieldset>
+    <legend>족발 사이즈</legend>
+    <label>보쌈 소<input type="radio" name="size"></label>
+    <label>보쌈 중<input type="radio" name="size"></label>
+    <label>보쌈 대<input type="radio" name="size" checked></label>
+    </fieldset>
+    <br>
+
+    <textarea>다중 텍스트 입력공간</textarea>
+
+    <br>
+    <select multiple size="6
+">
+        <optgroup label="햄버거">
+            <option>싸이버거</option>
+            <option>휠렛버거</option>
+            <option>치즈버거</option>
+        </optgroup>
+        <optgroup label="라면">
+            <option selected>틈새라면</option>
+            <option>열라면</option>
+            <option>신라면</option>
+        </optgroup>
+    </select>
+
+    <br><br>
+    <input type="button" value="인풋버튼">
+    <input type="submit" value="인풋submit버튼">
+    <input type="reset" value="인풋reset버튼">
+    <button type="button">태그버튼</button>
+
+    <button type="submit">태그버튼</button>
+
+    <br>
+    <input type="text" value="하이">
+    <h3>form</h3>
+    <form>
+        <input type="text" maxlength="5" placeholder="하이">
+        <input type="reset" disabled>
+        <!-- 주석 단축키 Ctrl + K C -->
+        <!-- <input type="submit"> -->
+        <button>버튼</button>
+        <button type="submit">submit버튼</button>
+    </form>
+
+    <br>
+    <button>
+        <img src="두부.jpg">
+        두부버튼
+    </button>
+
+</body>
+</html>
