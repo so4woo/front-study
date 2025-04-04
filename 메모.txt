@@ -1,0 +1,30 @@
+<!-- 주석 단축키 Ctrl + K C -->
+<!-- <input type="submit"> -->
+
+<!-- 블록 요소 vs 인라인 요소 -->
+<!-- p태그 vs span태그 -->
+
+<!-- selected는 드롭다운 초기값 -->
+
+<!-- th(볼드), td(얇음)는 열을 의미 -->
+!-- checked는 체크박스 디폴트 -->
+<!-- selected는 옵션 드롭다운 디폴트 -->
+<!-- button타입 button하면 무용 -->
+<!-- disabled는 버튼 비활성화 -->
+
+
+
+    <style>
+        /* CSS 코드 작성 영역 */
+        /* 내부 스타일 시트 방식(해당 요소 전체변경) */
+        h1{color: red;}
+    </style>
+
+    <!-- 외부 스타일 시트 방식(파일 가져와야함) -->
+    <link rel="stylesheet" href="basic.css">
+
+</head>
+<body> 
+    <h1>CSS Basic</h1>
+    <!-- 인라인 스타일 시트 방식(지정 코드만 변경) -->
+    <h2 style="color: blue;">H2 Tag</h2>

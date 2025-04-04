@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS1</title>
+
+
+    <style>
+        /* 중첩시 우선순위 인라인>외부=내부 순서위치 */
+        /* CSS 코드 작성 영역 */
+        /* 내부 스타일 시트 방식(해당 요소 전체변경) */
+        h1{color: red;}
+
+        h3{color: darkgreen;}
+
+        h4{color: darkcyan;}
+    </style>
+            <!-- 외부 스타일 시트 방식(파일 가져와야함) -->
+            <link rel="stylesheet" href="basic.css">
+
+
+
+</head>
+<body>
+    
+    <h1 style="color: blueviolet;">CSS Basic</h1>
+    <!-- 인라인 스타일 시트 방식(지정 코드만 변경) -->
+    <h2 style="color: blue;">H2 Tag</h2>
+
+    <h3>H3 Tag</h3>
+
+    <h4>H4 Tag</h4>
+</body>
+</html>
