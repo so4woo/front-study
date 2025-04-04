@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자 학습</title>
+
+    <style>
+        /* 전체선택자 */
+        *{color: red;}
+
+        /* 태그 선택자 */
+        h2{color: blue;}
+
+        /* id 선택자 (id는 #표기) */
+        #selsct-id{color: green;}
+
+        /* 클래스 선택자 */
+        .selsct-class{color: black;}
+
+        /* 속성 선택자 */
+        /* [href] {color: yellow;} */
+        [target] {color: hotpink;}
+
+    </style>
+</head>
+<body>
+    
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3 id="selsct-id">h3</h3>
+    <h4 class="selsct-class">h4</h4>
+    <h5>h5</h5>
+
+    <p>p하나</p>
+    <p class="selsct-class">p 둘</p>
+    <p>p 셋</p>
+    <p>p 넷</p>
+
+    <a href="https://www.naver.com/" target="_blank">네이버로 이동</a>
+    <a href="https://www.google.co.kr/?hl=ko" target="_self">구글로 이동</a>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조합선택자</title>
+
+    <style>
+        /* 그룹 선택자*/
+        p, strong{color: red;}
+        /* strong{color: red;} */
+
+        /* 자식 선택자 */
+        /* .top-div > p{color: blue;} */
+
+        /* 하위 선택자 */
+        /* .top-div p{color: blue;}
+        .top-div span{color: green;} */
+
+        /* 인접 형제 선택자 */
+        /* p + span {color: orange;} */
+
+        /* 일반 형제 선택자 */
+        p ~ span {color: orange;}
+
+        /* 가상 요소 선택자 */
+        #vr-p::before{
+            content: "*";
+            color: aqua;}
+        
+        #vr-p::after{
+            content: "...";
+            color: gold;
+        }
+
+        /* 가상 클래스 선택자 */
+        a:link{color: turquoise;}
+        a:visited{color: chocolate;}
+        a:hover{color:blue;}
+        a:active{color: green;}
+
+        input:focus{color: red;}
+        input:disabled{color: coral;}
+
+        .chk:checked +span{color: red;}
+        .chk:checked +label{color: red;}
+
+    </style>
+</head>
+<body>
+    
+    <div class="top-div">
+        <p>p1</p>
+        <p>p2</p>
+        <span>span1</span>
+        <span>span2</span>
+
+        <div>
+            <p>p3</p>
+            <p id="vr-p">p4</p>
+            <strong>strong</strong>
+            <span>span3</span>
+        </div>
+
+        <div>
+            <strong>strong2</strong>
+            <span>span4</span>
+        </div>
+
+    </div>
+
+    <p>p5</p>
+
+    <a href="https://ko.wikipedia.org/wiki/%EC%9B%B9%EC%82%AC%EC%9D%B4%ED%8A%B8">위키피디아</a>
+    <a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjdks_13b2MAxWLbQ8CHe3LM6MYABACGgJ0Yg&co=1&gclid=CjwKCAjw47i_BhBTEiwAaJfPpv0WrS_UiaNXcMloosiTppWz-kvHKmXdCPUprrYQZDACCDtl8OLR-xoCHXcQAvD_BwE&ohost=www.google.com&cid=CAESVuD2twcVagBqUCF48opJolRC0AlU0EUy2nYosij6wwbEW7_f1mBA2BJxYLg0aTsI28FHrHtiloFrC1iA2YX-ZHTJI3MMQWFTx9gPpAJ-68I4dIC_5YgG&sig=AOD64_3IyTXez-xmdvbFmwgsT__ep_4xOQ&q&adurl&ved=2ahUKEwjh38r13b2MAxUJkK8BHX6NAjwQ0Qx6BAgKEAE">초콜릿</a>
+    <a href="https://www.band.us/band/98186524">밴드</a>
+
+    <br><br>
+
+    <input type="text" value="input1 value"><br>
+    <input type="text" value="input1 value" disabled><br>
+
+    <br>
+    <input type="checkbox" class="chk"><span>출근</span> <br>
+    <input type="checkbox" class="chk"><span>퇴근</span><br>
+    <input type="checkbox" class="chk" id="retire"><label for="retire">조퇴</label><br>
+
+    <label>
+    <input type="checkbox" class="chk"><span>조퇴</span>
+</label><br>
+</body>
+</html>
