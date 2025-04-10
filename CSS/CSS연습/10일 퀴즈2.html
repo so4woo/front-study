@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            .box {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            margin:20px;
+
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+        }
+
+        .box {
+            animation-name: ani;
+        }
+
+        @keyframes ani {
+            0% {
+                background-color: blue;
+                left:0px;
+                rotate:0deg;
+            }
+            50% {
+                background-color: orange;
+                left:200px;
+                rotate:360deg;
+            }
+            100% {
+                background-color: pink;
+                left:400px;
+                rotate:720deg;
+                /* rotate는 회전 deg 는 각도 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
