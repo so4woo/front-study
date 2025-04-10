@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 700px;
+            height: 500px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            margin-top: 50px;
+            border: 1px solid black;
+        }
+
+        .ht{
+            height: 100px;
+            display: flex;
+            /* flex는 정렬이 필요한 항목을 포함한 부모에 넣기 */
+            justify-content: space-between;
+            /* justify-content: space-between;
+            컨텐츠 간격 만드는 명령어 */
+        }
+
+        .min{
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .my{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+
+        .ma{
+            display: flex;
+            height: 300px;
+        }
+
+        .section{
+            width: 70%;
+            height: 300px;
+            background-color: orange;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /* 가로축 정렬 */
+            /* align-items: center; */
+            /* 세로축 정렬 */
+            align-content: center;
+            /* 전체에 대한 정렬 */
+        }
+
+        .aside{
+            width: 30%;
+            height: 300px;
+            background-color: green;
+        }
+
+        .box{background-color: black;
+            width: 100px;
+            height: 50px;
+            margin: 30px;
+
+            transition-property: all;
+            transition-duration: 0.5s;
+            /* 돌아갈 때 바뀌려면 원본,
+            시작할 때만 바뀌려면 호버쪽 */
+        }
+
+        .box:hover{
+            transform: scale(1.5);
+            /* scale(1.5, 1.5) x축크기, y축크기 / scale(1.5) 둘다 */
+        }
+
+        .foo{
+            background-color: blue;
+            height: 100px;
+        }
+
+        .www{
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* 글씨 스타일 통일하고 클래스 추가방식 */
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="ht">
+            <div class="min www">메인메뉴</div>
+            <div class="my www">마이페이지</div>
+        </div>
+        <div class="ma">
+            <div class="section">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="aside www">aside</div>
+        </div>
+        <div class="foo www">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지 레이아웃</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid black;
+        }
+
+        .container{
+            width: 700px;
+        }
+
+        #hd{
+            background-color: red;
+            height: 100px;
+        }
+
+        #ct{
+            background-color: orange;
+            width: 490px;
+            height: 300px;
+        }
+
+        #si{
+            background-color: green;
+            width: 210px;
+            height: 300px;
+        }
+
+        #fo{
+            background-color: blue;
+        }
+
+        .box{background-color: black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 100px;
+            height: 50px;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="hd">
+            <div style="align-self: flex-start;">메인메뉴</div>
+            <div style="align-self: flex-end;">마이페이지</div>
+        </div>
+        <div>
+        <div id="ct">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div id="si">aside</div>
+        </div>
+        <div id="fo">footer</div>
+
+    </div>
+</body>
+</html>
