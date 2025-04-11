@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;}
+
+        .container{
+            width: 800px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            margin: 0 auto;}
+
+        .머리{height: 100px;
+            display: flex;
+            justify-content: space-between;}
+
+        .dhls{
+            width: 50%;
+            height: 100px;}
+
+        .dh{
+            width: 50%;
+            height: 100px;
+            background-color: gray;}
+
+        .목{
+            height: 100px;
+            background-color: purple;}
+
+        .중앙{display: flex;
+            justify-content: space-between;}
+
+        .l1{
+            width: 40%;
+            height: 200px;
+            background-color: skyblue;}
+
+            .rr{width: 60%;}
+
+        .l2{height: 100px;}
+
+        .l3{height: 100px;
+            background-color: salmon;}
+
+        .bbb{border: 1px solid black;}
+
+        .yyy{background-color: yellow;}
+
+        .바닥{display: flex;}
+
+        .b1{width: 25%; height: 100px;}
+        .b2{width: 25%; height: 100px; background-color: orange;}
+        .b3{width: 25%; height: 100px;}
+        .b4{width: 25%; height: 100px; background-color: greenyellow;}
+
+        @media screen and (max-width:700px){
+            .container{width: 100%;}
+        } 
+
+        @media screen and (max-width:650px) {
+            .container{width: 100%;}
+            .dhls{width: 100%;}
+            .dh{width: 100%;}
+
+            .바닥{display: flex;
+                flex-wrap: wrap;}
+            .b1{width: 50%;}
+            .b2{width: 50%;}
+            .b3{width: 50%;}
+            .b4{width: 50%;}
+
+        }
+
+        @media screen and (max-width:500px) {
+            .container{width: 100%;}
+            .머리{display: flex;
+                flex-wrap: wrap;
+                height: 200px;}
+            .목{height: 100px;}
+            .중앙{display: flex;
+                flex-wrap: wrap;}
+            .l1{width: 100%;
+            height: 100px;}
+            .rr{width: 100%;
+                display: flex;
+                flex-wrap: wrap;}
+            .l2{width: 50%;}
+            .l3{width: 50%;}
+        }
+
+        @media screen and (max-width:350px) {
+            .container{width: 100%;}
+            .머리{display: flex;
+                flex-wrap: wrap;
+                height: 200px;}
+            .목{height: 100px;}
+            .중앙{display: flex;
+                flex-wrap: wrap;}
+            .l1{width: 100%;
+            height: 100px;}
+            .rr{width: 100%;
+                display: flex;
+                flex-wrap: wrap;}
+            .l2, .l3{width: 100%;}
+            .바닥{display: flex;
+                flex-wrap: wrap;}
+            .b1, .b2, .b3, .b4{width: 100%;}
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="머리">
+            <div class="dhls yyy bbb"></div>
+            <div class="dh bbb"></div>
+        </div>
+        <div class="목 bbb"></div>
+        <div class="중앙">
+            <div class="l1 bbb"></div>
+            <div class="rr">
+                <div class="l2 yyy bbb"></div>
+                <div class="l3 bbb"></div>
+            </div>
+        </div>
+        <div class="바닥">
+            <div class="b1 yyy bbb"></div>
+            <div class="b2 bbb"></div>
+            <div class="b3 yyy bbb"></div>
+            <div class="b4 bbb"></div>
+        </div>
+    </div>
+
+</body>
+</html>

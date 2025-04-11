@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box{
+            width: 400px;
+            height: 400px;
+            background-color: antiquewhite;
+        }
+
+        h2{color: red;}
+
+        p{font-weight: bold;}
+
+
+
+
+
+        /* @media not print and (...) 
+        @media only screen and (조건 맞을 때만)*/
+        @media screen and (max-width: 768px) {
+            .box{background-color: slateblue;}
+        }
+        /* 처음엔 없다가 괄호만큼 적용되면 효과 적용
+        호버와 비슷함! */
+
+        @media screen and (max-width: 480px) {
+            .box{background-color: greenyellow;}
+            h2{color: blue;}
+
+            p{font-weight: normal;
+            font-size: 12px;}
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>h2 tag</h2>
+        <p>p tag</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos reiciendis quo enim repellat dolorem impedit dolore eum asperiores quae, ea magnam incidunt veniam sunt. Provident incidunt accusantium est optio amet!</p>
+
+    </ㅇiv>
+</body>
+</html>
